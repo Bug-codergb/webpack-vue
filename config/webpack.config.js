@@ -13,7 +13,7 @@ module.exports = function(webpackEnv){
     entry:paths.appIndexJs,
     output:{
       path:paths.appBuild,
-      filename:isEnvProduction?'static/js/[name].[contenthash:8].js':'/static/js/bundle.js',
+      filename:isEnvProduction?'static/js/[name].[contenthash:8].js':'static/js/bundle.js',
       chunkFilename: isEnvProduction ?"static/js/[name].[contenthash:8].chunk.js":"static/js/[name].chunk.js",
       assetModuleFilename: "static/media/[name].[hash][ext]",
       clean: true
@@ -32,7 +32,7 @@ module.exports = function(webpackEnv){
             {
               test:/\.vue$/,
               include: paths.appSrc,
-              loader: require.resolve('babel-loader'),
+              loader: require.resolve('vue-loader'),
             }
           ]
         }

@@ -1,4 +1,8 @@
 {
+  "name": "guobin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "prettier": "prettier --write .",
     "dev": "cross-env CURRENT_ENV=development node scripts/development.js",
@@ -11,7 +15,9 @@
     "html-webpack-plugin": "^5.6.0",
     "less": "^4.2.0",
     "less-loader": "^12.1.0",
+    "vue-loader": "^17.4.2",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

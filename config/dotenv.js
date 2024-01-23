@@ -1,8 +1,9 @@
 const dotenv = require("dotenv");
-const paths = require("./paths.js");
+const path = require("path");
+
 const envConfigPath={
-  development:paths.appEnvDev,
-  production:paths.appEnvProd
+  development:path.resolve(process.cwd(),".env.development"),
+  production:path.resolve(process.cwd(),".env.production")
 }
 const envConfig = dotenv.config({
   path:envConfigPath[process.env.CURRENT_ENV]

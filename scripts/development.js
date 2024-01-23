@@ -1,4 +1,6 @@
+require("../config/dotenv.js")
 const WebpackDevServer = require("webpack-dev-server")
+const paths = require("../config/paths.js")
 const configFactory = require("../config/webpack.config.js");
 const { createCompiler } = require("../config/createCompiler.js");
 process.env.NODE_ENV="development";
