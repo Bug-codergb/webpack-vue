@@ -1,1 +1,5 @@
-console.log(1)
+import { createApp } from "vue";
+import App from "./App.vue"
+const app = createApp(App);
+app.mount(document.getElementById("app"))
+
